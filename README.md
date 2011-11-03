@@ -1,4 +1,4 @@
-## Mural Art Mapper 
+## Tweet Mapper 
 
 A CouchDB + Nodejs + Twitter application that crowdsources mural art mapping.
 
@@ -40,3 +40,8 @@ This pushes to the `default` as specified. To push to the `public` you'd run:
     couchapp push public
 
 Of course you can continue to add more deployment targets as you see fit, and give them whatever names you like.
+
+
+## The Twitter pollers
+
+The Python and Node.js twitter-poll modules are written to do different things.  The Node one watches a Twitter account for new tweets, whereas the Python one searches for all tweets mentioning a keyword or keywords.  Use the one that suits what you want to do.
