@@ -77,6 +77,10 @@ def fetch_tweets():
         if tweet['id'] == since_id:
             continue
 
+        # Skip non geo-tagged tweets
+        if 'geo' not in tweet or tweet['geo'] is None:
+            continue
+
         tweet_docs.append(prepare_tweet(tweet))
     save_tweets(tweet_docs)
 
