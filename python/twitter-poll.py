@@ -38,7 +38,7 @@ def search_tweets(rpp=100, page=1, **params):
             break
 
 def prepare_tweet(tweet):
-    print 'Preparing tweet...' # + unicode(tweet)
+    print 'Preparing tweet ' + unicode(tweet)
 
     doc = tweet.copy()
     doc['_id'] = str(tweet['id'])
